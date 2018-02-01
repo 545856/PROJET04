@@ -18,7 +18,7 @@ int main()
 		cout << "\n---Gestionnaire de chaînes de caractères---" << endl << endl;
 		cout << "[1] Saisir un nouveau message." << endl;
 		cout << "[2] Afficher les messages." << endl;
-		cout << "[0] Quitter le gestionnaire." << endl;
+		cout << "[0] Quitter le gestionnaire." << endl << endl;
 	} while (fctMenu() != STOP);
 	
 	return 0;
@@ -31,4 +31,14 @@ int fctMenu()
 	cout << "Votre choix : ";
 	cin >> dChoix;
 	cout << endl;
+
+	switch (dChoix)
+	{
+	case 1:
+		return CONTINUE;
+	case 2:
+		return CONTINUE;
+	default:
+		return CONTINUE;
+	}
 }
