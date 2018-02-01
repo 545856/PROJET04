@@ -12,12 +12,15 @@ int fctMenu();
 
 int main()
 {
-	string chaine1, chaine2;
+	
 	do
 	{
-		cout << "\n---Gestionnaire de chaînes de caractères---" << endl << endl;
+		//system("cls");
+		cout << "\n---Gestionnaire de chaines de caracteres---" << endl << endl;
+		cout << "--- PART 1 ---" << endl;
 		cout << "[1] Saisir un nouveau message." << endl;
 		cout << "[2] Afficher les messages." << endl;
+		cout << "--- PART 2 ---" << endl;
 		cout << "[0] Quitter le gestionnaire." << endl << endl;
 	} while (fctMenu() != STOP);
 	
@@ -27,6 +30,7 @@ int main()
 int fctMenu()
 {
 	int dChoix;
+	string sChaineUtilisateur;
 
 	cout << "Votre choix : ";
 	cin >> dChoix;
@@ -35,6 +39,10 @@ int fctMenu()
 	switch (dChoix)
 	{
 	case 1:
+		system("cls");
+		cout << "Insertion d'une chaine de caracteres :" << endl;
+		cin >> sChaineUtilisateur;
+		cout << sChaineUtilisateur;
 		return CONTINUE;
 	case 2:
 		return CONTINUE;
