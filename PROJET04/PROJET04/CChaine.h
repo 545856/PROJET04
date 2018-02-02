@@ -16,9 +16,11 @@ public:
 	~CChaine();
 	//Surcharge des opérateurs
 	operator string() const;
-	operator CChaine() const;	
-	CChaine operator =(const CChaine& CChaineCopie);
+	CChaine operator=(const CChaine& CChaineCopie);
+	ostream& operator <<(const CChaine& CChaineCopie);
 	//Prédicats
-
+	int Getm_tChaine() const noexcept(true);
+	int Getm_dTailleMax() const noexcept(true);
+	int Getm_dIndex() const noexcept(true);
 	//Actions
 };
