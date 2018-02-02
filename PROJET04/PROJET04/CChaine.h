@@ -1,6 +1,10 @@
 #pragma once
-#define STOP 0
+#include "string"
+#include <iostream>
+using namespace std;
+
 #define CONTINUE 1
+#define STOP 0
 
 class CChaine
 {
@@ -8,6 +12,7 @@ private:
 	char *m_tChaine;
 	int m_dTailleMax;
 	int m_dIndex;
+	string m_sChaine;
 public:
 	//C'tor & d'tor
 	CChaine();

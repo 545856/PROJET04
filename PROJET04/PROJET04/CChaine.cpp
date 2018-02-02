@@ -8,6 +8,7 @@ using namespace std;
 //...............................
 CChaine::CChaine()
 {
+	
 }
 CChaine::CChaine(string sChaineCopie)
 {
@@ -70,7 +71,7 @@ int CChaine::Setm_tChaine()
 }
 int CChaine::Setm_dTailleMax(int dTailleMax)
 {
-	m_dTailleMax
+	//m_dTailleMax
 }
 int CChaine::Setm_dIndex(int dindex)
 {
