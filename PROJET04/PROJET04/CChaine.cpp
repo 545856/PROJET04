@@ -11,7 +11,12 @@ CChaine::CChaine()
 }
 CChaine::CChaine(string sChaineCopie)
 {
-
+	m_tChaine = (char*)malloc(sizeof(char) * sChaineCopie.size());
+	Setm_dTailleMax(sChaineCopie.size());
+	for (int i = 0; i < sChaineCopie.size(); i++)
+	{
+		m_tChaine[i] = sChaineCopie[1];
+	}
 }
 CChaine::CChaine(const CChaine& oChaineCopie)
 {
@@ -49,13 +54,25 @@ ostream& CChaine::operator<<(const CChaine& CChaineCopie)
 //....................
 int CChaine::Getm_tChaine() const noexcept(true)
 {
-
+	//cout << Objet<<end;
 }
 int CChaine::Getm_dTailleMax() const noexcept(true)
 {
-
+	return m_dTailleMax;
 }
 int CChaine::Getm_dIndex() const noexcept(true)
+{
+	return m_dIndex;
+}
+int CChaine::Setm_tChaine()
+{
+	//
+}
+int CChaine::Setm_dTailleMax(int dTailleMax)
+{
+	m_dTailleMax
+}
+int CChaine::Setm_dIndex(int dindex)
 {
 
 }

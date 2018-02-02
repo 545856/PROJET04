@@ -5,7 +5,7 @@
 class CChaine
 {
 private:
-	int *m_tChaine;
+	char *m_tChaine;
 	int m_dTailleMax;
 	int m_dIndex;
 public:
@@ -23,4 +23,7 @@ public:
 	int Getm_dTailleMax() const noexcept(true);
 	int Getm_dIndex() const noexcept(true);
 	//Actions
+	int Setm_tChaine();
+	int Setm_dTailleMax(int dTailleMax);
+	int Setm_dIndex(int dTailleMax);
 };
