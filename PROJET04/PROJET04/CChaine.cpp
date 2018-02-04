@@ -26,9 +26,10 @@ CChaine::CChaine(const CChaine& oChaineCopie)
 CChaine::~CChaine()
 {
 	cout << "Suppression de l'instance" << endl;
-	free(m_tChaine);
+	delete &m_sChaine;
+	/*free(m_tChaine);
 	delete &m_dIndex;
-	delete &m_dTailleMax;
+	delete &m_dTailleMax;*/
 }
 //...........................
 // Surcharge des opérateurs .
@@ -36,11 +37,7 @@ CChaine::~CChaine()
 CChaine::operator string() const
 {
 	string sCopieTabChar;
-
-	for (int dCompteur = 0; dCompteur < Getm_dIndex();dCompteur++)
-	{
-
-	}
+	//
 }
 CChaine CChaine::operator =(const CChaine& CChaineCopie)
 {
@@ -53,7 +50,42 @@ ostream& CChaine::operator<<(const CChaine& CChaineCopie)
 //....................
 // Getters & Setters .
 //....................
-int CChaine::Getm_tChaine() const noexcept(true)
+string CChaine::Getm_sChaine() const noexcept(true)
+{
+
+}
+void CChaine::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*int CChaine::Getm_tChaine() const noexcept(true)
 {
 	//cout << Objet<<end;
 }
@@ -77,3 +109,4 @@ int CChaine::Setm_dIndex(int dindex)
 {
 
 }
+*/
