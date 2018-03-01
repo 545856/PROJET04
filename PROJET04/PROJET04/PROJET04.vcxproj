@@ -151,6 +151,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CChaine.cpp" />
+    <ClCompile Include="CTabChaine.cpp" />
+    <ClCompile Include="Erreur.cpp" />
     <ClCompile Include="PROJET04.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
