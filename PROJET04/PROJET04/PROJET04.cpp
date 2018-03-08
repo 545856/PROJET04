@@ -69,7 +69,7 @@ int main()
 		{
 			system("cls");
 			cout << "\n---Gestionnaire de chaines de caracteres---" << endl;
-			cout << "Saisir un message : ";
+			cout << "Saisir un message : ! ";
 			cin >> sMessage;																	// P'tit problème avec la gestion du char*.		
 			tMessage = (char *)malloc(sizeof(char)*sMessage.size());
 			for (dIndex = 0; dIndex < sMessage.size(); dIndex++)
